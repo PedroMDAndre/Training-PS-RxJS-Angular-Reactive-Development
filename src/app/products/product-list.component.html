@@ -25,13 +25,14 @@
     <div class="table-responsive">
       <table class="table mb-0"
              *ngIf="products$ | async as products">
+        
         <thead>
           <tr>
-            <th>Product</th>
-            <th>Code</th>
-            <th>Category</th>
-            <th>Price</th>
-            <th>In Stock</th>
+            <th scope="col">Product</th>
+            <th scope="col">Code</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">In Stock</th>
           </tr>
         </thead>
         <tbody *ngFor="let product of products">
