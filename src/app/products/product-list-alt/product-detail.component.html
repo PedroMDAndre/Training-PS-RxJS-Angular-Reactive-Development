@@ -1,5 +1,5 @@
 <div class="card"
-     *ngIf="product">
+     *ngIf="product$ | async as product">
   <div class="card-header">
     {{pageTitle}}
   </div>
@@ -36,9 +36,9 @@
              *ngIf="productSuppliers">
         <thead>
           <tr>
-            <th>Supplier</th>
-            <th>Cost</th>
-            <th>Minimum Quantity</th>
+            <th scope="col">Supplier</th>
+            <th scope="col">Cost</th>
+            <th scope="col">Minimum Quantity</th>
           </tr>
         </thead>
         <tbody>
