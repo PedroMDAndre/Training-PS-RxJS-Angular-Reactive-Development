@@ -30,6 +30,6 @@ export class ProductListAltComponent {
   constructor(private productService: ProductService) { }
 
   onSelected(productId: number): void {
-    this.productService.selectedProductChange(productId);
+    this.productService.selectedProductChanged(productId);
   }
 }
